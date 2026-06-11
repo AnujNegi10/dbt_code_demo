@@ -6,7 +6,8 @@ renamed as (
     select
         id          as customer_id,
         first_name,
-        last_name
+        last_name,
+        CURRENT_TIMESTAMP() AS run_at
     from source
 )
 
