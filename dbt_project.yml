@@ -40,4 +40,4 @@ models:
     # Applies to all files under models/example/
     marts:
       +dbt_state:
-        lag_tolerance: 45m
+        lag_tolerance: "45m"
