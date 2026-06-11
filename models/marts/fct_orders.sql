@@ -1,3 +1,9 @@
+{{ config(
+    dbt_state={
+        'lag_tolerance': '0m'
+    }
+) }}
+
 with orders as (
     select * from {{ ref('stg_orders') }}
 ),
