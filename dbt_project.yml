@@ -20,6 +20,6 @@ models:
   my_new_project:
     marts:
       +state:
-        lag_tolerance: "45m"
+        lag_tolerance: "0m"
     example:
       +materialized: table
