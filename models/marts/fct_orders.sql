@@ -20,6 +20,7 @@ final as (
         orders.customer_id,
         orders.order_date,
         orders.status,
+        CURRENT_TIMESTAMP() AS run_at,
         coalesce(order_payments.total_amount, 0) as total_amount
     from orders
     left join order_payments using (order_id)
